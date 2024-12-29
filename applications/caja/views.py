@@ -40,10 +40,10 @@ class ProcesoCerrarCajaView(VentasPermisoMixin, View):
                 amount= total,
                 user=self.request.user
             )
-        
         return HttpResponseRedirect(
             reverse(
                 'caja_app:caja-index'
             )
         )
-    
+
+
